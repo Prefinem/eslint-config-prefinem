@@ -39,8 +39,8 @@
 	"scripts": {
 		"clean": "yarn lint && yarn prettify",
 		"eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
-		"lint": "eslint --fix",
-		"prettify": "prettier --config ./.prettierrc.json --write",
+		"lint": "eslint --fix index.js",
+		"prettify": "prettier --config ./.prettierrc.json --write index.js",
 		"staged": "lint-staged"
 	},
 	"version": "0.0.1"
