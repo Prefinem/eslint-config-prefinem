@@ -16,10 +16,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn install and clean
+      - name: yarn install clean and test
         run: |
           yarn
           yarn clean
+          yarn test
         env:
           CI: true
   codecov:
