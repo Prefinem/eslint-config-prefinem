@@ -4,7 +4,7 @@ module.exports = {
 		es6: true,
 		node: true,
 	},
-	extends: ['eslint:all', 'plugin:react/all', 'prettier', 'prettier/react'],
+	extends: ['eslint:all', 'plugin:react/all', 'prettier', 'prettier/react', 'plugin:jest/recommended'],
 	parserOptions: {
 		ecmaFeatures: {
 			jsx: true,

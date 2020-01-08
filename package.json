@@ -15,7 +15,8 @@
 	"devDependencies": {
 		"husky": "3.1.0",
 		"lint-staged": "9.5.0",
-		"prettier": "1.19.1"
+		"prettier": "1.19.1",
+		"jest": "^24.9.0"
 	},
 	"husky": {
 		"hooks": {
@@ -27,6 +28,7 @@
 		"*.js": [
 			"eslint --fix",
 			"prettier --config ./.prettierrc.json --write",
+			"jest --findRelatedTests",
 			"git add"
 		]
 	},
@@ -41,7 +43,8 @@
 		"eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
 		"lint": "eslint --fix index.js",
 		"prettify": "prettier --config ./.prettierrc.json --write index.js",
-		"staged": "lint-staged"
+		"staged": "lint-staged",
+		"test": "jest"
 	},
 	"version": "0.0.1"
 }
