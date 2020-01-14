@@ -13,7 +13,7 @@
 		"eslint-plugin-react": "7.17.0"
 	},
 	"devDependencies": {
-		"husky": "4.0.8",
+		"husky": "4.0.9",
 		"lint-staged": "9.5.0",
 		"prettier": "1.19.1",
 		"jest": "24.9.0"
