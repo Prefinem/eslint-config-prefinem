@@ -27,8 +27,7 @@
 		"*.js": [
 			"eslint --fix",
 			"prettier --config ./.prettierrc.json --write",
-			"jest --findRelatedTests",
-			"git add"
+			"jest --findRelatedTests"
 		]
 	},
 	"main": "index.js",
