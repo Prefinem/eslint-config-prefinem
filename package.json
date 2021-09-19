@@ -34,6 +34,7 @@
     "url": "git+https://github.com/Prefinem/eslint-config-prefinem"
   },
   "resolutions": {
+    "glob-parent": "^5.1.2",
     "lodash": "^4.17.21",
     "path-parse": "^1.0.7"
   },
@@ -41,10 +42,10 @@
     "clean": "yarn lint && yarn prettify",
     "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "lint": "eslint --fix index.js",
+    "prepare": "husky install",
     "prettify": "prettier --config ./.prettierrc.json --write index.js",
     "staged": "lint-staged",
-    "test": "jest",
-    "prepare": "husky install"
+    "test": "jest"
   },
   "version": "0.0.6"
 }
