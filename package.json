@@ -34,7 +34,8 @@
     "url": "git+https://github.com/Prefinem/eslint-config-prefinem"
   },
   "resolutions": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "path-parse": "^1.0.7"
   },
   "scripts": {
     "clean": "yarn lint && yarn prettify",
